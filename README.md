@@ -1,3 +1,5 @@
+[![codebeat badge](https://codebeat.co/badges/cd9096c9-d3ca-47d2-a527-2ccc87194e99)](https://codebeat.co/projects/github-com-halifaxspeaking-homepage-master)
+
 # homepage
 
 This README outlines the details of collaborating on this Ember application.
