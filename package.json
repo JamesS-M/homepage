@@ -16,6 +16,8 @@
     "build": "ember build",
     "lint": "node_modules/.bin/concurrently \"npm:lint.*\"",
     "lint.hbs": "node_modules/.bin/ember-template-lint app/templates/**/*",
+    "lint.js": "node_modules/.bin/eslint app config scripts server/index.js server/mocks tests *.js",
+    "lint.styles": "./node_modules/.bin/stylelint app/styles/**/*.css",
     "test.ci": "npm run lint && npm run test"
   },
   "devDependencies": {
