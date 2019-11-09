@@ -1,5 +1,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0d90e6ae-86c4-4fb3-98be-0e493a9b1d12/deploy-status)](https://app.netlify.com/sites/halifax-speaking/deploys)
+
 # homepage
 
 This README outlines the details of collaborating on this Ember application.
