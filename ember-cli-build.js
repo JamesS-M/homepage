@@ -3,10 +3,8 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
-  let envIsDevelopment = process.env.EMBER_ENV === 'development';
   let app = new EmberApp(defaults, {
-    hinting: !envIsDevelopment,
-    tests: !envIsDevelopment
+    // Add options here
   });
 
   // Use `app.import` to add additional libraries to the generated
