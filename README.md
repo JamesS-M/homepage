@@ -1,4 +1,4 @@
-[![codebeat badge](https://codebeat.co/badges/cd9096c9-d3ca-47d2-a527-2ccc87194e99)](https://codebeat.co/projects/github-com-halifaxspeaking-homepage-master)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 # homepage
 
