@@ -3,8 +3,17 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
+  let envIsDevelopment = process.env.EMBER_ENV === 'development';
   let app = new EmberApp(defaults, {
     // Add options here
+    hinting: !envIsDevelopment,
+    tests: !envIsDevelopment,
+
+    'ember-bootstrap': {
+      'bootstrapVersion': 4,
+      'importBootstrapCSS': false,
+      blacklist: ['bs-popover', 'bs-accordion']
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
