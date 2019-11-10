@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('tools', function() {
+    this.route('spinner');
+  });
 });
 
 export default Router;
