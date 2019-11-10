@@ -7,7 +7,6 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
     hinting: !envIsDevelopment,
-    tests: !envIsDevelopment,
 
     'ember-bootstrap': {
       'bootstrapVersion': 4,
