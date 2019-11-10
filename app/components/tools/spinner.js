@@ -35,7 +35,7 @@ export default class Spinner extends Component {
 
     // Compute the position of each group on the pie:
     let pie = d3.pie()
-      .value(d => 100 / data.length)
+      .value(() => 100 / data.length)
     let data_ready = pie(data)
 
     // shape helper to build arcs:
@@ -60,7 +60,7 @@ export default class Spinner extends Component {
       .data(data_ready)
       .enter()
       .append('text')
-      .text((d, a, i) => d.data)
+      .text(d => d.data)
       .attr("transform", function (d) { return "translate(" + arcGenerator.centroid(d) + ")"; })
       .style("text-anchor", "middle")
       .style("font-size", 17)

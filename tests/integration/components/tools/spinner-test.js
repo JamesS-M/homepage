@@ -10,17 +10,10 @@ module('Integration | Component | tools/spinner', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<Tools::Spinner />`);
+    this.set('options', [1,2,3])
 
-    assert.equal(this.element.textContent.trim(), '');
+    await render(hbs`<Tools::Spinner @options={{this.options}}/>`);
 
-    // Template block usage:
-    await render(hbs`
-      <Tools::Spinner>
-        template block text
-      </Tools::Spinner>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.equal(this.element.textContent.trim(), this.options.join(''));
   });
 });
