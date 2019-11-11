@@ -1,6 +1,6 @@
 <LinkTo @route="tools">Back</LinkTo>
 
-<Tools::SpinnerMain />
+<Tools::SpinnerMain @options={{this.model}} />
 
 {{!-- I may use a subroute such as "add" or "success" for added spinner functionality --}}
 {{outlet}}
